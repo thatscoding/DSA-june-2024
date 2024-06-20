@@ -1,42 +1,42 @@
 # Array
 
-## Characteristics:
+### Characteristics:
 
-### Fixed Size: The size of an array is fixed once it is created. You cannot increase or decrease its size dynamically.
+#### Fixed Size: The size of an array is fixed once it is created. You cannot increase or decrease its size dynamically.
 
-### Type-Specific: Arrays are type-specific, meaning they can only store elements of a single type (e.g., int[], String[]).
+#### Type-Specific: Arrays are type-specific, meaning they can only store elements of a single type (e.g., int[], String[]).
 
-### Performance: Accessing elements in an array is very fast due to direct indexing (O(1) time complexity).
+#### Performance: Accessing elements in an array is very fast due to direct indexing (O(1) time complexity).
 
-### Memory Allocation: Arrays require contiguous memory allocation which can lead to higher memory usage if the array size is large and not all elements are used.
+#### Memory Allocation: Arrays require contiguous memory allocation which can lead to higher memory usage if the array size is large and not all elements are used.
 
-## Use Cases:
+### Use Cases:
 
-### Static Data: When the number of elements is known beforehand and does not change, such as storing the days of the week.
+#### Static Data: When the number of elements is known beforehand and does not change, such as storing the days of the week.
 
-### Performance-Critical Applications: When performance is crucial and the overhead of dynamic resizing is unacceptable, such as in real-time systems or performance-sensitive applications.
+#### Performance-Critical Applications: When performance is crucial and the overhead of dynamic resizing is unacceptable, such as in real-time systems or performance-sensitive applications.
 
-### Multidimensional Data: For handling multidimensional data, such as matrices in scientific computations.
+#### Multidimensional Data: For handling multidimensional data, such as matrices in scientific computations.
 
 # ArrayList
 
-## Characteristics:
+### Characteristics:
 
-### Dynamic Size: ArrayList can grow and shrink dynamically as elements are added or removed.
+#### Dynamic Size: ArrayList can grow and shrink dynamically as elements are added or removed.
 
-### Type-Specific (Generics): ArrayList uses generics to allow any type of object (e.g., ArrayList<Integer>, ArrayList<String>).
+#### Type-Specific (Generics): ArrayList uses generics to allow any type of object (e.g., ArrayList<Integer>, ArrayList<String>).
 
-### Ease of Use: Provides many useful methods for manipulating the collection (e.g., add(), remove(), contains(), size()).
+#### Ease of Use: Provides many useful methods for manipulating the collection (e.g., add(), remove(), contains(), size()).
 
-### Performance: Accessing elements is fast (O(1) time complexity), but adding/removing elements can be slower due to possible resizing (O(n) in the worst case).
+#### Performance: Accessing elements is fast (O(1) time complexity), but adding/removing elements can be slower due to possible resizing (O(n) in the worst case).
 
-## Use Cases:
+### Use Cases:
 
-### Dynamic Data: When the number of elements is not known beforehand or changes frequently, such as a list of users in a chat application.
+#### Dynamic Data: When the number of elements is not known beforehand or changes frequently, such as a list of users in a chat application.
 
-### Ease of Manipulation: When you need to frequently add, remove, or check for the presence of elements, such as managing a list of tasks in a to-do application.
+#### Ease of Manipulation: When you need to frequently add, remove, or check for the presence of elements, such as managing a list of tasks in a to-do application.
 
-### Collections API: When you need to leverage the Java Collections Framework which provides powerful utilities and algorithms for data manipulation.
+#### Collections API: When you need to leverage the Java Collections Framework which provides powerful utilities and algorithms for data manipulation.
 
 | Feature                  | Array          | ArrayList         |
 | ------------------------ | -------------- | ----------------- |
@@ -47,18 +47,20 @@
 | **Memory Allocation**    | Contiguous     | Non-contiguous    |
 | **Usage Complexity**     | Low            | High (richer API) |
 
-# Arrays in Java
+## Arrays in Java
 
-## 1. Declaring an Array
-### You can declare an array by specifying the type of its elements.
+### 1. Declaring an Array
+
+#### You can declare an array by specifying the type of its elements.
 
 ```java
 int[] numbers; // Declares an array of integers
 String[] names; // Declares an array of strings
 ```
 
-## 2. Initializing an Array
-### You can initialize an array at the time of declaration or later.
+### 2. Initializing an Array
+
+#### You can initialize an array at the time of declaration or later.
 
 ```java
 // Initialize at declaration
@@ -71,8 +73,9 @@ int[] primes = {2, 3, 5, 7, 11};
 numbers = new int[]{10, 20, 30, 40, 50};
 ```
 
-## 3. Accessing Array Elements
-### You can access array elements using their index, which starts from 0.
+### 3. Accessing Array Elements
+
+#### You can access array elements using their index, which starts from 0.
 
 ```java
 int firstPrime = primes[0]; // Access the first element
@@ -80,8 +83,10 @@ int secondPrime = primes[1]; // Access the second element
 
 primes[2] = 17; // Modify the third element
 ```
-## 4. Looping Through an Array
-### You can loop through an array using a for loop or an enhanced for loop.
+
+### 4. Looping Through an Array
+
+#### You can loop through an array using a for loop or an enhanced for loop.
 
 ```java
 // Using a for loop
@@ -97,26 +102,26 @@ System.out.println(prime);
 
 # ArrayList in Java
 
-## 1. Importing ArrayList
+### 1. Importing ArrayList
 
-### You need to import the ArrayList class from the java.util package.
+#### You need to import the ArrayList class from the java.util package.
 
 ```java
 import java.util.ArrayList;
 ```
 
-## 2. Declaring and Initializing an ArrayList
+### 2. Declaring and Initializing an ArrayList
 
-### You can declare and initialize an ArrayList to hold specific types of objects.
+#### You can declare and initialize an ArrayList to hold specific types of objects.
 
 ```java
 ArrayList<Integer> numbers = new ArrayList<>(); // Creates an ArrayList for integers
 ArrayList<String> names = new ArrayList<>(); // Creates an ArrayList for strings
 ```
 
-## 3. Adding Elements
+### 3. Adding Elements
 
-### You can add elements to an ArrayList using the add method.
+#### You can add elements to an ArrayList using the add method.
 
 ```java
 numbers.add(10);
@@ -124,9 +129,9 @@ numbers.add(20);
 numbers.add(30);
 ```
 
-### 4. Accessing Elements
+#### 4. Accessing Elements
 
-### You can access elements using the get method and their index.
+#### You can access elements using the get method and their index.
 
 ```java
 int firstNumber = numbers.get(0); // Access the first element
@@ -135,9 +140,9 @@ int secondNumber = numbers.get(1); // Access the second element
 numbers.set(2, 40); // Modify the third element
 ```
 
-## 5. Removing Elements
+### 5. Removing Elements
 
-### You can remove elements using the remove method.
+#### You can remove elements using the remove method.
 
 ```java
 numbers.remove(1); // Removes the element at index 1
@@ -145,9 +150,9 @@ numbers.remove(1); // Removes the element at index 1
 numbers.clear(); // Removes all elements
 ```
 
-## 6. Looping Through an ArrayList
+### 6. Looping Through an ArrayList
 
-### You can loop through an ArrayList using a for loop, an enhanced for loop, or an iterator.
+#### You can loop through an ArrayList using a for loop, an enhanced for loop, or an iterator.
 
 ```java
 
